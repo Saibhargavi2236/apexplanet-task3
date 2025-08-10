@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.weather-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.weather-info {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Quiz Styling */
+.quiz-container {
+  padding: 20px;
+  text-align: center;
+}
+
+#options button {
+  display: block;
+  margin: 5px auto;
+  padding: 10px 15px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== Quiz Styling Enhancements ===== */
+.quiz-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.quiz-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+#options button {
+  display: block;
+  width: 80%;
+  margin: 8px auto;
+  padding: 12px 15px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#options button:hover {
+  background: #0b5ed7;
+  transform: scale(1.02);
+}
+
+#options button.correct {
+  background-color: #198754; /* Green for correct */
+}
+
+#options button.wrong {
+  background-color: #dc3545; /* Red for wrong */
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#next-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#score {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
