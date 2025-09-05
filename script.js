@@ -1,4 +1,4 @@
-const API_KEY = "7c64e0ebad1b424aa8b73458251008"; // Replace with your actual WeatherAPI key
+const API_KEY = "f2907dccde034a2f8af24715250509"; // Replace with your actual WeatherAPI key
 
 document.querySelectorAll(".weather-btn").forEach(btn => {
   btn.addEventListener("click", () => {
